@@ -12,7 +12,8 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
-
+    public $role;
+    public $status;
 
     /**
      * {@inheritdoc}
@@ -52,7 +53,7 @@ class SignupForm extends Model
         $user->email = $this->email;
         $user->setPassword($this->password);
         $user->generateAuthKey();
-        
+        $user->role = '1';
         return $user->save() ? $user : null;
     }
 }

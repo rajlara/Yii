@@ -37,6 +37,7 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'Admin', 'url' => ['/admin/index']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
@@ -49,10 +50,14 @@ AppAsset::register($this);
             )
             . Html::endForm()
             . '</li>';
+            $Items = [
+                ['label' => 'Admin', 'url' => ['admin/index']],        
+                ];
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => $menuItems,
+        'items' => $Items,
     ]);
     NavBar::end();
     ?>
