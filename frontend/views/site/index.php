@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Student App';
 ?>
 <div class="site-index">
 
@@ -14,7 +14,7 @@ $this->title = 'My Yii Application';
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
     </div>
 
-    <div class="body-content">
+    <!-- <div class="body-content">
 
         <div class="row">
             <div class="col-lg-4">
@@ -49,5 +49,5 @@ $this->title = 'My Yii Application';
             </div>
         </div>
 
-    </div>
+    </div> -->
 </div>
